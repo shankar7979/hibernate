@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.com.one_to_many_map">
+	<class name="User" table="user1">
+		<id type="int" name="id">
+		</id>
+		<property name="name" type="string"></property>
+		<map name="map1" table="user1_product">
+			<key column="id1"></key>
+			<index column="p_id" type="string"></index>
+			<element column="p_value" type="string"></element>
+		</map>
+	</class>
+</hibernate-mapping>

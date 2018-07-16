@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="prd1" class="org.com.bean.Product" p:id="6565" p:cost="675">
+		<property name="name" value="book"></property>
+	</bean>
+
+	<bean id="survey" class="org.com.bean.SurveyImpl">
+		<constructor-arg name="name" value="education" />
+		<constructor-arg name="state" value="A.P" />
+		<constructor-arg name="id" value="766776" />
+
+	</bean>
+
+	<bean id="dev" class="org.com.bean.Developer">
+		<property name="id" value="677767" />
+		<property name="name" value="sumanth sarma" />
+		<property name="salary" value="600000" />
+		
+		 <property name="p_list" ref="p_list" />  
+		
+		<property name="address">
+			<list>
+				<value>noida</value>
+				<value>chennai</value>
+				<value>gurgaon</value>
+				<value>chennai</value>
+			</list>
+		</property>
+
+		<property name="duration">
+			<set>
+				<value>10</value>
+				<value>8</value>
+				<value>9</value>
+				<value>8</value>
+			</set>
+		</property>
+
+		<property name="vehicle">
+			<map>
+				<entry key="bike" value="Honda Shine"></entry>
+				<entry key="car" value="Celario"></entry>
+				<entry key="cycle" value="Hero Cycle"></entry>
+				<entry key="scooty" value="Activa"></entry>
+			</map>
+		</property>
+		<property name="birthday">
+			<props>
+				<prop key="0"> Sunday</prop>
+				<prop key="1"> Monday</prop>
+				<prop key="2"> Tuesday</prop>
+				<prop key="3"> Wednesday</prop>
+				<prop key="4"> Thursday</prop>
+				<prop key="5"> Friday</prop>
+				<prop key="6"> Saturday</prop>
+			</props>
+		</property>
+
+	</bean>
+
+	<bean class="org.com.bean.Project" id="p_list" p:p_name="weather forecast"
+		p:p_location="manesar">
+		<property name="p_id" value="77766"></property>
+	</bean>
+
+</beans>

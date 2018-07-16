@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/jta.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/asm.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/cglib-2.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/commons-collections-2.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/hibernate-entitymanager.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/hibernate-tools.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/javassist.jar"/>
+	<classpathentry kind="lib" path="D:/Documents and Settings/shankar/My Documents/lib/lib/jdbc2_0-stdext.jar"/>
+	<classpathentry kind="lib" path="F:/pdf/hibernate/lib/mysql-connector-java-5.0.4-bin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="org.com.bean">
+	</context:component-scan>
+
+	<bean id="book" class="org.com.bean.Book" p:isbn="4544" p:name="spring recipee"
+		p:cost="6446">
+	</bean>
+	<!-- <bean id="story" class="org.com.bean.Story" p:pageno="1" p:strory_name="cat 
+		and rat" p:story_type="kids story"> </bean> -->
+
+<!-- 	<bean id="leader" class="org.com.bean.Leader" p:name="Raj kumar"
+		p:id="4554" p:ssnb="56565">
+
+	</bean> -->
+	
+	<bean id="leader" class="org.com.bean.Leader">
+
+	</bean>
+
+	<bean id="speech" class="org.com.bean.Speech" p:speech_id="9987"
+		p:speech_name="corruption" p:speech_location="noida">
+	</bean>
+
+	<bean id="speech1" class="org.com.bean.Speech" p:speech_id="9990"
+		p:speech_name="IT education" p:speech_location="chennai">
+
+	</bean>
+
+
+
+
+
+</beans>

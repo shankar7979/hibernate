@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="onetomany.Parent">
+		<id name="id" column="parent_id">
+			<generator class="increment" />
+		</id>
+		<property name="pname" />
+		<property name="page" />
+		<set name="children">
+			<key column="parent_id" />
+			<one-to-many class="onetomany.Child" />
+		</set>
+	</class>
+
+	<class name="onetomany.Child">
+		<id name="id" >
+			<generator class="increment" />
+		</id>
+		<property name="cname" />
+		<property name="cage" />
+	</class>
+</hibernate-mapping>
+
+
+
+
+

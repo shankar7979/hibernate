@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="many_to_one.Person">
+		<id type="int" name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"></property>
+
+		<many-to-one name="addrress" column="address_id">
+
+		</many-to-one>
+	</class>
+
+	<class name="many_to_one.Address">
+		<id type="int" name="address_id" column="address_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="city" type="string"></property>
+	</class>
+
+
+
+
+
+</hibernate-mapping>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="one_to_one.Student">
+		<id type="int" name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"></property>
+
+		<many-to-one name="exam" column="exam_id" unique="true">
+       
+		</many-to-one>
+	</class>
+
+	<class name="one_to_one.Exam">
+		<id type="int" name="id"  column="exam_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" type="string"></property>
+	</class>
+
+
+
+
+
+</hibernate-mapping>

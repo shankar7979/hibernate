@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="org.com.model.Person">
+		<id  name="id" type="integer">
+			<generator class="assigned">
+			</generator>
+		</id>
+		<property name="name" type="string"/>
+		<property name="age" type="integer"/>
+
+		<component name="bday">
+		<property name="date" type="date" column="bdate"/>
+		<property name="dayname" type="string" />
+		</component>
+	</class>
+</hibernate-mapping>

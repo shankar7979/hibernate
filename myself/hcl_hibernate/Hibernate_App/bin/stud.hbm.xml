@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="org.com.model.Student"  table="mystudent">
+	
+		<id name="roll" type="integer" column="roll_number" length="7">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="name" type="string" column="stud_name" length="15" ></property>
+		<property name="subject" type="string" column="stud_subject" length="15"></property>
+
+<property name="city" type="string" column="stud_city" length="15"></property>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+  <!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	<class name="Payment" abstract="true">
+		<id name="paymentId" type="long">
+			<generator class="increment" />
+		</id>
+	 <property name="amount" /> 	
+	 <union-subclass name="CreditCardPayment">
+        <property name="creditCardType" column="CCTYPE"/>
+    </union-subclass>
+	
+	<union-subclass name="CashPayment">
+        <property name="cashType" column="CCTYPE"/>
+    </union-subclass>
+	</class>
+
+
+</hibernate-mapping>

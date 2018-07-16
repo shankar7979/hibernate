@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+	<class name="org.com.model.Student">
+		<id name="roll" type="integer">
+			 <generator class="assigned"> 
+			 <!--  
+			<generator class="increment">
+-->
+				<!-- <generator class="sequence"> above is hibernate sequence below is 
+					user defined sequence <generator class="sequence"> <param name="sequence" 
+					>seq1</param> -->
+
+			</generator>
+
+
+		</id>
+		<property name="name" type="string"></property>
+		<property name="marks" type="integer"></property>
+		<!-- <query name="getAll"> <![CDATA[from Student order by marks asc]]> </query> -->
+	</class>
+
+	<query name="getAll">
+		
+		<![CDATA[from Student]]>
+	</query>
+
+</hibernate-mapping>

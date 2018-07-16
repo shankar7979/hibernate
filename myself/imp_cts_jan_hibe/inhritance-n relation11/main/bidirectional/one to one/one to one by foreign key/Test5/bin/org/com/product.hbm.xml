@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.com">
+
+	<class name="Product">
+		<id name="id" column="prd_id">
+		 <generator class="native"> </generator>
+		</id>
+		<property name="name" />
+
+		 <many-to-one name="prdDetail"  unique="true" 
+			column="prdetail_id" cascade="all"/>  
+  
+ </class>
+
+	<class name="ProductDetail">
+		<id name="id" column="prdetail_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="prd_name" />
+		<one-to-one name="product"  property-ref="prdDetail">
+
+		</one-to-one>
+	</class>
+
+</hibernate-mapping>
+
+
+
+
+
+
+
+
